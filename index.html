@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>小米商城</title>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./btn.css">
+    <!-- <script src="./iconfont/iconfont.js"></script> -->
+    <script src="../../jquery-3.4.1.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="site-topbar">
+        <div class="container clearfix">
+            <div class="topbar-nav">
+                <a href="javascript:">小米商城</a><span class="sep">|</span>
+                <a href="javascript:">MIUI</a><span class="sep">|</span>
+                <a href="javascript:">IoT</a><span class="sep">|</span>
+                <a href="javascript:">云服务</a><span class="sep">|</span>
+                <a href="javascript:">金融</a><span class="sep">|</span>
+                <a href="javascript:">有品</a><span class="sep">|</span>
+                <a href="javascript:">小爱开放平台</a><span class="sep">|</span>
+                <a href="javascript:">企业团购</a><span class="sep">|</span>
+                <a href="javascript:">资质证照</a><span class="sep">|</span>
+                <a href="javascript:">协议规则</a><span class="sep">|</span>
+                <a href="javascript:">下载app</a>
+            </div>
+            <div class="topbar-cart">
+                <a href="#" class="mini">
+                    <i class="iconfont ">&#xe603</i>
+                    <!-- <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-icon22fuzhi"></use>
+                    </svg> -->
+                    购物车<span class="cart-num">(0)</span>
+                </a>
+                <div class="cart-menu" style="display: none;">
+                    <div class="loading">购物车中还没有商品，赶紧选购吧！</div>
+                </div>
+            </div>
+
+            <div class="topbar-info">
+                <a href="javascript:">登录</a><span class="sep">|</span>
+                <a href="javascript:">注册</a><span class="sep">|</span>
+                <span class="msg">
+                    <a href="javascript:">消息通知</a>
+                </span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="site-header">
+        <div class="container">
+            <div class="header-logo clearfix">
+                <a href="#" class="logo ir">小米官网</a>
+            </div>
+
+            <div class="header-nav">
+                <ul class="nav-list clearfix">
+                    <li class="nav-category">
+                        <a href="#" class="link-category">全部商品分类</a>
+                        <!-- <div class="site-category"></div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">小米手机</a>
+                        <!-- <div class="item-children">
+                            <div class="container">
+                                <ul class="children-list">
+                                    
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Redmi红米</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">电视</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">笔记本</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">家电</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">路由器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">智能硬件</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">社区</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header-search">
+                <form action="#" class="search-form">
+                    <input type="search" class="search-text">
+                    <input type="submit" class="search-btn iconfont" value="&#xe60b">
+                    <div class="search-hot-words">
+                        <a href="#">小米9 Pro 5G</a>
+                        <a href="#">Redmi Note 8</a>
+                    </div>
+                    <div class="keywordList hide">
+                        <ul class="resultList">
+                            <li>
+                                <a href="javascript:">小米9</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Redmi K20 pro</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Redmi K20</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Redmi Note 7 pro</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Redmi Note 7</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">小米电视4c</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">电视32英寸</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">笔记本pro</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">小爱音响</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">净水器</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-header">
+            <h1>小米秒杀</h1>
+        </div>
+        <div class="container">
+            <div class="main-banner">
+                <ul class="clearfix">
+                    <li class="active">
+                        <a href="javascript:">
+                            <em>22:00</em>
+                            <span>
+                                <!-- 抢购中<br>
+                                距结束00:43:02 -->
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <em>00:00</em>
+                            <span>明日开始</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <em>10:00</em>
+                            <span>明日开始</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <em>14:00</em>
+                            <span>明日开始</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <em>20:00</em>
+                            <span>明日开始</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-con">
+                <!-- 1 -->
+                <ul class="active clearfix">
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/1aab21c2af95fa20d572f1cf78ad277d.png" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米体脂秤2 白色 通用</span>
+                                <span class="desc">轻松掌握身体脂肪率</span>
+                                <span class="price">
+                                    49.50元
+                                    <del>99元</del>
+                                </span>
+                                <span class="btn btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有2649人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/75cfba1ec641388eabc3ae5464ff1d27.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米小爱音响 Play (白色) 量产版 白色</span>
+                                <span class="desc">听音乐、语言遥控家电</span>
+                                <span class="price">
+                                    99.00元
+                                    <del>169元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有488人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/793a818aee7cb7634522940323fb54f8.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">Redmi全自动波轮洗衣机 1A 8kg 白色</span>
+                                <span class="desc">一键操作，父母都爱用</span>
+                                <span class="price">
+                                    699.00元
+                                    <del>799元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/8a60f4d10dbcb83f0b0e357309baa36b.jpg" aclass="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">高品质多功能头戴耳机</span>
+                                <span class="desc">我的私人KTV</span>
+                                <span class="price">
+                                    179.00元
+                                    <del>249元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/b5a6a8f6e5715044e447542e58fc5582.jpg" aclass="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">米兔折叠婴儿推车 灰色</span>
+                                <span class="desc">出发去向往的地方</span>
+                                <span class="price">
+                                    62.00元
+                                    <del>699元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有5人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/db0c370f85f438f4dda6cce9a770f7f2.jpg" aclass="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">MIJOY 抽纸 青春版 24包/箱</span>
+                                <span class="desc">精选原生纸浆，健康环保</span>
+                                <span class="price">
+                                    27.9元
+                                    <del>32.9元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 2 -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/1.png" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米体脂秤2 白色 通用</span>
+                                <span class="desc">轻松掌握身体脂肪率</span>
+                                <span class="price">
+                                    49.50元
+                                    <del>99元</del>
+                                </span>
+                                <span class="btn btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有2649人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/0c218f4f5473e7b9b9068f51d0d57b2f.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米小爱音响 Play (白色) 量产版 白色</span>
+                                <span class="desc">听音乐、语言遥控家电</span>
+                                <span class="price">
+                                    99.00元
+                                    <del>169元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有488人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/3e33f9e4a70b7764081bcdd64a77cd8d.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">Redmi全自动波轮洗衣机 1A 8kg 白色</span>
+                                <span class="desc">一键操作，父母都爱用</span>
+                                <span class="price">
+                                    699.00元
+                                    <del>799元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/5a081a86b2233ed479d892f01907e7a6.jpg" aclass="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">高品质多功能头戴耳机</span>
+                                <span class="desc">我的私人KTV</span>
+                                <span class="price">
+                                    179.00元
+                                    <del>249元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/7d7e5d609eafbb482de0c5cc142e1c26.jpg" aclass="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">米兔折叠婴儿推车 灰色</span>
+                                <span class="desc">出发去向往的地方</span>
+                                <span class="price">
+                                    62.00元
+                                    <del>699元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有5人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/81ad0f47f7ba0c9a553c4c6344ad2960.jpg" aclass="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">MIJOY 抽纸 青春版 24包/箱</span>
+                                <span class="desc">精选原生纸浆，健康环保</span>
+                                <span class="price">
+                                    27.9元
+                                    <del>32.9元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 3 -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/2.png" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米体脂秤2 白色 通用</span>
+                                <span class="desc">轻松掌握身体脂肪率</span>
+                                <span class="price">
+                                    49.50元
+                                    <del>99元</del>
+                                </span>
+                                <span class="btn btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有2649人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/95e213643de13df038cfb5d96a086ad8.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米小爱音响 Play (白色) 量产版 白色</span>
+                                <span class="desc">听音乐、语言遥控家电</span>
+                                <span class="price">
+                                    99.00元
+                                    <del>169元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有488人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/00602e7d90719bf87286bacbd8cc30b7.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">Redmi全自动波轮洗衣机 1A 8kg 白色</span>
+                                <span class="desc">一键操作，父母都爱用</span>
+                                <span class="price">
+                                    699.00元
+                                    <del>799元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- 4 -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/3.png" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米体脂秤2 白色 通用</span>
+                                <span class="desc">轻松掌握身体脂肪率</span>
+                                <span class="price">
+                                    49.50元
+                                    <del>99元</del>
+                                </span>
+                                <span class="btn btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有2649人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/a6d8084b0886755e37bd80145441a4fb.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米小爱音响 Play (白色) 量产版 白色</span>
+                                <span class="desc">听音乐、语言遥控家电</span>
+                                <span class="price">
+                                    99.00元
+                                    <del>169元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有488人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/db0c370f85f438f4dda6cce9a770f7f2.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">Redmi全自动波轮洗衣机 1A 8kg 白色</span>
+                                <span class="desc">一键操作，父母都爱用</span>
+                                <span class="price">
+                                    699.00元
+                                    <del>799元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- 5 -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/89f171d85ae5db7439f7069ee5fb13be.png" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米体脂秤2 白色 通用</span>
+                                <span class="desc">轻松掌握身体脂肪率</span>
+                                <span class="price">
+                                    49.50元
+                                    <del>99元</del>
+                                </span>
+                                <span class="btn btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有2649人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/e38e51819728173d71aaf38027b165d0.jpg" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">小米小爱音响 Play (白色) 量产版 白色</span>
+                                <span class="desc">听音乐、语言遥控家电</span>
+                                <span class="price">
+                                    99.00元
+                                    <del>169元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有488人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="item-box">
+                            <span class="img-con">
+                                <img src="./img/780bc26685adedecc9750bdce5f17c8e.png" class="done">
+                            </span>
+                            <span class="pro-con">
+                                <span class="name">Redmi全自动波轮洗衣机 1A 8kg 白色</span>
+                                <span class="desc">一键操作，父母都爱用</span>
+                                <span class="price">
+                                    699.00元
+                                    <del>799元</del>
+                                </span>
+                                <span class="btn btn-green btn-small btn-primary">登录后抢购</span>
+                                <span class="person hide">已有0人设置提醒</span>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container notic">
+            *小米秒杀活动规则：<br>
+            1.秒杀商品是否参加活动、最终秒杀成功的商品，以订单结算页显示为准，活动包括但不限于优惠券、赠品、满减、满赠等；<br>
+            2.秒杀商品数量有限，活动以下单支付成功为准，请加入购物车后尽快下单支付;<br>
+            3.秒杀价不含运费，最终以订单结算页价格为准；<br>
+            4.订单中商品的数量、颜色、型号等，以订单结算页为准。<br>
+            温馨提示：因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，如您发现活动商品标价或促销信息有异常，请您立即联系小米客服，以便我们及时补正。<br>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="footer-service">
+                <ul class="service-list clearfix">
+                    <li>
+                        <a href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe629</i>
+                            预约维修服务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe60e</i>
+                            7天无理由退货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe606</i>
+                            15天免费换货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe616</i>
+                            满150包邮
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:" target="_blank">
+                            <i class="iconfont">&#xe646</i>
+                            520余家售后网点
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links clearfix">
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <a href="javascript:" target="_blank">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">购物指南</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">订单操作</a>
+                    </dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>服务支持</dt>
+                    <dd>
+                        <a href="javascript:" target="_blank">售后政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">自助服务</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">相关下载</a>
+                    </dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>线下门店</dt>
+                    <dd>
+                        <a href="javascript:" target="_blank">小米之家</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">服务网点</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">授权体验店</a>
+                    </dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>关于小米</dt>
+                    <dd>
+                        <a href="javascript:" target="_blank">了解小米</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">加入小米</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">投资者关系</a>
+                    </dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>关注我们</dt>
+                    <dd>
+                        <a href="javascript:" target="_blank">新浪微博</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">官方微信</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">联系我们</a>
+                    </dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>特色服务</dt>
+                    <dd>
+                        <a href="javascript:" target="_blank">F码通道</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">礼物码</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:" target="_blank">防伪查询</a>
+                    </dd>
+                </dl>
+                <div class="col-contact">
+                    <p class="phone">400-100-5678</p>
+                    <p>
+                        周一至周日 8:00-18:00 <br>
+                        (仅收市话费)
+                    </p>
+                    <a href="javascript:" class="btn btn-small">
+                        <i class="iconfont">&#xe67f</i>
+                        人工客服
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-info">
+        <div class="container">
+            <div class="logo ir">小米官网</div>
+            <div class="info-text">
+                <p class="sites">
+                    <a href="javascript:">小米商城</a><span class="sep">|</span>
+                    <a href="javascript:">MIUI</a><span sep>|</span>
+                    <a href="javascript:">米家</a><span class="sep">|</span>
+                    <a href="javascript:">米聊</a><span class="sep">|</span>
+                    <a href="javascript:">多看</a><span class="sep">|</span>
+                    <a href="javascript:">游戏</a><span class="sep">|</span>
+                    <a href="javascript:">路由器</a><span class="sep">|</span>
+                    <a href="javascript:">米粉卡</a><span class="sep">|</span>
+                    <a href="javascript:">政企服务</a><span class="sep">|</span>
+                    <a href="javascript:">小米天猫店</a><span class="sep">|</span>
+                    <a href="javascript:">小米集团隐私政策</a><span class="sep">|</span>
+                    <a href="javascript:">小米商城隐私政策</a><span class="sep">|</span>
+                    <a href="javascript:">小米商城用户协议</a><span class="sep">|</span>
+                    <a href="javascript:">问题反馈</a><span class="sep">|</span>
+                    <a href="javascript:">廉正举报</a><span class="sep">|</span>
+                    <a href="javascript:">诚信合规</a>
+                </p>
+                <p>
+                    © mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号<br>
+                    （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京) -非经营性-2014-0090 营业执照 医疗器械公告<br>
+                    增值电信业务许可证 网络食品经营备案（京）【2018】WLSPJYBAHF-12 食品经营许可证<br>
+                    违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                </p>
+            </div>
+            <div class="info-links">
+                <a href="javascript:">
+                    <img src="./img/truste.png">
+                </a>
+                <a href="javascript:">
+                    <img src="./img/v-logo-2.png">
+                </a>
+                <a href="javascript:">
+                    <img src="./img/v-logo-1.png">
+                </a>
+                <a href="javascript:">
+                    <img src="./img/v-logo-3.png">
+                </a>
+                <a href="javascript:">
+                    <img src="./img/ba10428a4f9495ac310fd0b5e0cf8370.png">
+                </a>
+            </div>
+        </div>
+        <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+    </div>
+
+
+<script src="./js/countdown.js"></script>
+<script src="./js/siteShow.js"></script>
+    <script>
+
+
+
+    </script>
+</body>
+
+</html>
